@@ -21,8 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_38 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* BaseCoordinator.swift */; };
-		OBJ_39 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Coordinator.swift */; };
+		E9D3E31F2B516C53005E4D63 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D3E31E2B516C53005E4D63 /* Typealias.swift */; };
+		OBJ_38 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Coordinator.swift */; };
+		OBJ_39 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Coordinating.swift */; };
 		OBJ_40 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* NavigationCoordinator.swift */; };
 		OBJ_41 /* NavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* NavigationTransition.swift */; };
 		OBJ_42 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Presentable.swift */; };
@@ -34,8 +35,6 @@
 		OBJ_48 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ViewCoordinator.swift */; };
 		OBJ_49 /* ViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* ViewTransition.swift */; };
 		OBJ_67 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* CoordinatorTests.swift */; };
-		OBJ_68 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* XCTestManifests.swift */; };
-		OBJ_69 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* LinuxMain.swift */; };
 		OBJ_71 /* ModernCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ModernCoordinator::ModernCoordinator::Product" /* ModernCoordinator.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9D3E31E2B516C53005E4D63 /* Typealias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		"ModernCoordinator::ModernCoordinator::Product" /* ModernCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ModernCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"ModernCoordinator::ModernCoordinatorTests::Product" /* ModernCoordinatorTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ModernCoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
@@ -70,16 +70,14 @@
 		OBJ_18 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		OBJ_19 /* ViewTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransition.swift; sourceTree = "<group>"; };
 		OBJ_22 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
-		OBJ_23 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_24 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		OBJ_28 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = SOURCE_ROOT; };
 		OBJ_29 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_30 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_31 /* ModernCoordinator.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ModernCoordinator.podspec; sourceTree = "<group>"; };
 		OBJ_32 /* git */ = {isa = PBXFileReference; lastKnownFileType = text; path = git; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		OBJ_8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Coordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_21 /* CoordinatorTests */,
-				OBJ_24 /* LinuxMain.swift */,
 			);
 			path = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -114,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_22 /* CoordinatorTests.swift */,
-				OBJ_23 /* XCTestManifests.swift */,
 			);
 			path = CoordinatorTests;
 			sourceTree = "<group>";
@@ -146,8 +142,8 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* BaseCoordinator.swift */,
-				OBJ_9 /* Coordinator.swift */,
+				OBJ_8 /* Coordinator.swift */,
+				OBJ_9 /* Coordinating.swift */,
 				OBJ_10 /* NavigationCoordinator.swift */,
 				OBJ_11 /* NavigationTransition.swift */,
 				OBJ_12 /* Presentable.swift */,
@@ -158,6 +154,7 @@
 				OBJ_17 /* UnownedRouter.swift */,
 				OBJ_18 /* ViewCoordinator.swift */,
 				OBJ_19 /* ViewTransition.swift */,
+				E9D3E31E2B516C53005E4D63 /* Typealias.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -231,8 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_38 /* BaseCoordinator.swift in Sources */,
-				OBJ_39 /* Coordinator.swift in Sources */,
+				OBJ_38 /* Coordinator.swift in Sources */,
+				OBJ_39 /* Coordinating.swift in Sources */,
 				OBJ_40 /* NavigationCoordinator.swift in Sources */,
 				OBJ_41 /* NavigationTransition.swift in Sources */,
 				OBJ_42 /* Presentable.swift in Sources */,
@@ -242,6 +239,7 @@
 				OBJ_46 /* Transition.swift in Sources */,
 				OBJ_47 /* UnownedRouter.swift in Sources */,
 				OBJ_48 /* ViewCoordinator.swift in Sources */,
+				E9D3E31F2B516C53005E4D63 /* Typealias.swift in Sources */,
 				OBJ_49 /* ViewTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,8 +249,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_67 /* CoordinatorTests.swift in Sources */,
-				OBJ_68 /* XCTestManifests.swift in Sources */,
-				OBJ_69 /* LinuxMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +298,7 @@
 		OBJ_35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,9 +306,9 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ModernCoordinator.xcodeproj/ModernCoordinator_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -320,18 +317,22 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,6";
 				TARGET_NAME = ModernCoordinator;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
 		OBJ_36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,9 +340,9 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ModernCoordinator.xcodeproj/ModernCoordinator_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -350,12 +351,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,6";
 				TARGET_NAME = ModernCoordinator;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};

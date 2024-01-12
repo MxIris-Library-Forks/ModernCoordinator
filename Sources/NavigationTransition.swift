@@ -5,6 +5,8 @@
 //  Created by DucPD on 11/11/2021.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 ///
 /// `NavigationTransition` offers transitions that can be used with a `UINavigationController` as `rootViewController`.
@@ -45,3 +47,6 @@ public extension Transition where RootViewController == UINavigationController {
         rootViewController.setViewControllers(viewControllers, animated: animated)
     }
 }
+
+
+#endif
